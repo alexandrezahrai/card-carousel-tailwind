@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+/* Scaffolding */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Typography */
+.heading-1 {
+  @apply text-[55px] md:text-[85px] xl:text-[105px];
+  @apply font-black uppercase tracking-wide leading-[60px] md:leading-[98px];
+}
+
+.heading-2 {
+  @apply text-[40px];
+  @apply font-black tracking-normal;
+}
+
+.body-lg {
+  @apply text-[24px];
+  @apply font-bold leading-[26px];
+}
+
+/* Carousel Elements */
+.card {
+  @apply lg:max-w-[440px] w-full absolute;
+  @apply rounded-2xl overflow-hidden;
+  @apply p-12 pb-20 h-full;
+  @apply transition-all duration-[400ms] ease-in-out;
+}

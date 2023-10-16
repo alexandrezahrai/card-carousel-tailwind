@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Carousel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-dark font-roboto">
+    <main class="min-h-screen w-full grid place-content-center">
+      <section
+        class="container mx-auto py-[60px] lg:py-[100px] bg-light text-dark rounded-3xl overflow-hidden"
+      >
+        <div
+          class="flex flex-col lg:flex-row lg:items-center gap-9 lg:gap-10 max-w-[1200px]"
+        >
+          <div class="w-full">
+            <h1 class="heading-1"><span class="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">Card</span> Carousel</h1>
+            <div class="gap-[18px] mt-[35px] flex">
+              <button
+                type="button"
+                class="btn-prev h-16 w-16 rounded-full border-2 border-primary p-4 rotate-90"
+              >
+                <span class="sr-only">Previous</span>
+                <img
+                  src="assets/icon--arrow-down.svg"
+                  alt="arrow"
+                  class="w-full h-full object-cover object-center"
+                />
+              </button>
+              <button
+                type="button"
+                class="btn-next h-16 w-16 rounded-full border-2 border-primary p-4 -rotate-90"
+              >
+                <span class="sr-only">Previous</span>
+                <img
+                  src="assets/icon--arrow-down.svg"
+                  alt="arrow"
+                  class="w-full h-full object-cover object-center"
+                />
+              </button>
+            </div>
+          </div>
+
+          <!-- CARDS -->
+          <div
+            class="overflow-hidden lg:min-w-[400px] lg:max-w-[440px] w-full relative h-[500px] gap-5 md:gap-10 p-0"
+          >
+            <!-- Card #1 -->
+            <div class="card bg-primary">
+              <div class="min-h-[120px] pb-7">
+                <div
+                  class="w-28 h-28 bg-light rounded-full overflow-hidden p-4"
+                >
+                  <img
+                    src="assets/icon--snowflake.svg"
+                    alt="snowflake icon"
+                    class="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
+              <h2 class="heading-2">Slide #1</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <!-- Card #2 -->
+            <div class="card bg-secondary">
+              <div class="min-h-[120px] pb-7">
+                <div
+                  class="w-28 h-28 bg-light rounded-full overflow-hidden p-4"
+                >
+                  <img
+                    src="assets/icon--snowflake.svg"
+                    alt="snowflake icon"
+                    class="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
+              <h2 class="heading-2">Slide #2</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <!-- Card #3 -->
+            <div class="card bg-primary">
+              <div class="min-h-[120px] pb-7">
+                <div
+                  class="w-28 h-28 bg-light rounded-full overflow-hidden p-4"
+                >
+                  <img
+                    src="assets/icon--snowflake.svg"
+                    alt="snowflake icon"
+                    class="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
+              <h2 class="heading-2">Slide #3</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <!-- Card #4 -->
+            <div class="card bg-secondary">
+              <div class="min-h-[120px] pb-7">
+                <div
+                  class="w-28 h-28 bg-light rounded-full overflow-hidden p-4"
+                >
+                  <img
+                    src="assets/icon--snowflake.svg"
+                    alt="snowflake icon"
+                    class="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
+              <h2 class="heading-2">Slide #4</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
