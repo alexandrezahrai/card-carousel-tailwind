@@ -2,7 +2,7 @@
 
 ![Desktop](designs/desktop-design.png)
 
-# Project Title
+# Javascript + Tailwind Card Carousel
 
 A fully responsive and accessible card based carousel with buttons.
 
